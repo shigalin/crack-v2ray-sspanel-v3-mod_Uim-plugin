@@ -1,8 +1,6 @@
-# pay-v2ray-sspanel-v3-mod_Uim-plugin
-
+# crack-v2ray-sspanel-v3-mod_Uim-plugin
 # 本版本是肮脏的破解版本，只是自己学习使用，请支持原版
 # 破解二进制文件下载地址：[release](https://github.com/RManLuo/crack-v2ray-sspanel-v3-mod_Uim-plugin/releases)
-
 # 使用教程请看 [备份WIKI](https://github.com/splendidwrx/v2ray-wiki)
 ## 支持原版
 Malio SSPANEL主题 + V2Ray后端，原价1000，现在只需899（V2ray 是按年订阅），👉[查看详情](https://malio.fxxkmy.life/)
@@ -16,7 +14,7 @@ bash <(curl -L -s  https://raw.githubusercontent.com/RManLuo/crack-v2ray-sspanel
 ```
 ### caddy安装
 ``` bash
-bash <(curl -L -s https://raw.githubusercontent.com/RManLuo/crack-v2ray-sspanel-v3-mod_Uim-plugin/master/install_caddy.sh) node.com xxx@gmail.com fakeurl.com v2ray 10550
+bash <(curl -L -s https://raw.githubusercontent.com/RManLuo/crack-v2ray-sspanel-v3-mod_Uim-plugin/master/install_caddy.sh) node.com xxx@gmail.com https://fakeurl.com v2ray 10550
 ```
 
 ## Docker
