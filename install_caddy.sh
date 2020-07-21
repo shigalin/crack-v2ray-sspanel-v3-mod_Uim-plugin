@@ -80,13 +80,8 @@ main(){
 ${domain} {
     tls ${email}
     encode gzip
-    reverse_proxy / {
-	to ${proxy_site}:443
-	transport http {
-        	tls
-   	    }
-        }     
-    reverse_proxy  /${path} 127.0.0.1:${v2ray_port}
+    reverse_proxy / ${proxy_site}   
+    reverse_proxy /${path} 127.0.0.1:${v2ray_port}
 }
 import sites/*
 		EOF
