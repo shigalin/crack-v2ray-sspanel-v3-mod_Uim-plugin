@@ -10,7 +10,7 @@ _download_caddy_file() {
 	sudo apt install apt-transport-https
 	sudo apt update
 	sudo apt install caddy
-	if [[ ! -f /usr/local/bin/caddy ]]; then
+	if [[ ! -f /usr/bin/caddy ]]; then
 		echo -e "$red 安装 Caddy 出错！$none" && exit 1
 	fi
 }
