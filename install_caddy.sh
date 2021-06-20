@@ -80,7 +80,10 @@ main(){
 ${domain} {
     tls ${email}
     encode gzip
-    reverse_proxy / ${proxy_site}   
+    @exc {
+	not path /${path}/*
+    }
+    reverse_proxy @exc ${proxy_site}   
     reverse_proxy /${path} 127.0.0.1:${v2ray_port}
 }
 import sites/*
