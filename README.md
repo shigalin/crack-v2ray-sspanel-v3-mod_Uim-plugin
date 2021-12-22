@@ -16,7 +16,7 @@ bash <(curl -L -s  https://raw.githubusercontent.com/RManLuo/crack-v2ray-sspanel
 ```
 ### caddy安装
 ``` bash
-bash <(curl -L -s https://raw.githubusercontent.com/RManLuo/crack-v2ray-sspanel-v3-mod_Uim-plugin/master/install_caddy.sh) node.com xxx@gmail.com https://fakeurl.com v2ray 10550
+bash <(curl -L -s https://raw.githubusercontent.com/shigalin/crack-v2ray-sspanel-v3-mod_Uim-plugin/master/install_caddy.sh) node.com xxx@gmail.com https://fakeurl.com v2ray 10550
 ```
 
 ## Docker
