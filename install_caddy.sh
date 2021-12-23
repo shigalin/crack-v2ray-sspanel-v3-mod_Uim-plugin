@@ -79,12 +79,11 @@ main(){
     cat >/etc/caddy/Caddyfile <<-EOF
 ${domain} {
     tls ${email}
-    encode gzip
-    @exc {
-	not path /${path}/*
-    }
-    #reverse_proxy @exc ${proxy_site}   
-    reverse_proxy /${path} 127.0.0.1:${v2ray_port}
+   log ./caddy.log
+   reverse_proxy /ray localhost:12345 {
+     websocket
+     header_upstream -Origin
+   }
 }
 import sites/*
 		EOF
