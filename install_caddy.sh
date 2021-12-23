@@ -80,9 +80,14 @@ main(){
 ${domain} {
     tls ${email}
    log ./caddy.log
-   reverse_proxy /ray localhost:12345 {
-     websocket
-     header_upstream -Origin
+   reverse_proxy /${path} localhost:${v2ray_port} {
+     header_up Host {http.request.host}
+	header_up X-Real-IP {http.request.remote}
+	header_up X-Forwarded-For {http.request.remote}
+	header_up X-Forwarded-Port {http.request.port}
+	header_up X-Forwarded-Proto {http.request.scheme}
+	header_up Connection {http.request.header.Connection}
+	header_up Upgrade {http.request.header.Upgrade}
    }
 }
 import sites/*
