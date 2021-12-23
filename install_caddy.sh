@@ -79,7 +79,6 @@ main(){
     cat >/etc/caddy/Caddyfile <<-EOF
 ${domain} {
     tls ${email}
-   log ./caddy.log
    reverse_proxy /${path} localhost:${v2ray_port} {
      header_up Host {http.request.host}
 	header_up X-Real-IP {http.request.remote}
